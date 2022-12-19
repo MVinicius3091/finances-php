@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: repeating-linear-gradient( #5c87fcd2, #f4fcfc 20%);
+}
+
+section.form-content {
+    width: 100%;
+    padding: 30px;
+   
+}
+
+section.form-content > form {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section.form-content > form input, select {
+    border: none;
+    border-bottom: solid #000;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+section.form-content > form input:focus{
+    outline: none;
+}
+
+section.form-content > form input#juros {
+    width: 60px;
+    text-align: center;
+}
+
+section.form-content > form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.form-content > form button {
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+section > table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+section thead tr {
+    background-color: #000;
+    color: #ffffff;
+    border-collapse: collapse;
+    height: 40px;
+    font-size: 1.2rem;
+} 
+
+section > table tr{
+    padding: 10px;
+    text-align: center;
+}
+
+section tbody tr:nth-child(even) {
+    background-color: #c2c2c2;
+}
+
+section tbody tr:nth-child(odd) {
+    background-color: #ffffffef;
+}
+
+section tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+section tbody tr td {
+    padding: 10px;
+}
+
+section.table-content {
+    padding: 10px;
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #0303036e;
+    border-top: solid #000;
+    border-bottom: solid #000;
+}
+
+div.msg-error {
+    border: solid black;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    inset: 0;
+    margin: 35vh auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffffe0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.msg-error button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+div.msg-error button:hover{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+button#loading {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.103);
+    border-top: solid #000000  4px;
+    border-left: solid #000000 4px;
+    border-right: solid transparent;
+    border-bottom: transparent;
+
+    inset: 0;
+    margin: 40vh auto;
+
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+
+    to {
+        transform: rotate(1turn);
+    }
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0400f888;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.747);
+}
